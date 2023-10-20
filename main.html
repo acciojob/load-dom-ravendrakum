@@ -8,6 +8,22 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<script>
+    // Add an event listener to the "DOMContentLoaded" event
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to execute when the DOM is loaded
+        var body = document.body;
+        
+        // Ensure the body tag is empty by removing any child elements
+        while (body.firstChild) {
+            body.removeChild(body.firstChild);
+        }
+
+        // Create a new text node with the desired text and append it to the body
+        var textNode = document.createTextNode("DOM load success");
+        body.appendChild(textNode);
+    });
+</script>
     <script type="text/javascript" src="./script.js">
 </script>
 
